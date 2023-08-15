@@ -16,7 +16,6 @@ test('Правильно работает метод add класса Cart', () 
   cart.add(new Movie(4, 'Мстители 4', 2013, 'США', 'Avengers Assemble!', 'фантастика, боевик', 120, 100, 1));
   cart.add(new Gadget(7, 'Телефон', 2022, 'Самсунг', 30500, 1));
   cart.add(new Gadget(7, 'Телефон', 2022, 'Самсунг', 30500, 1));
-  console.log(cart.items)
   expect(cart.items.length).toBe(4);
   expect(cart.items[0]).toEqual(movieOne);
   expect(cart.items[3].count).toBe(2);
